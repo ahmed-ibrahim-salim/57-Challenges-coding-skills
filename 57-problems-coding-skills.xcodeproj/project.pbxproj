@@ -13,9 +13,8 @@
 		EF861E5E2914EDD100E006A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF861E5C2914EDD100E006A6 /* Main.storyboard */; };
 		EF861E602914EDD200E006A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF861E5F2914EDD200E006A6 /* Assets.xcassets */; };
 		EF861E632914EDD200E006A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF861E612914EDD200E006A6 /* LaunchScreen.storyboard */; };
-		EF861E6E2914EDD200E006A6 /* _7_problems_coding_skillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E6D2914EDD200E006A6 /* _7_problems_coding_skillsTests.swift */; };
-		EF861E782914EDD200E006A6 /* _7_problems_coding_skillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E772914EDD200E006A6 /* _7_problems_coding_skillsUITests.swift */; };
-		EF861E7A2914EDD200E006A6 /* _7_problems_coding_skillsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E792914EDD200E006A6 /* _7_problems_coding_skillsUITestsLaunchTests.swift */; };
+		EF861E872914EE5A00E006A6 /* tipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E862914EE5A00E006A6 /* tipCalculator.swift */; };
+		EF861E892914F49000E006A6 /* tipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E882914F49000E006A6 /* tipCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +44,9 @@
 		EF861E622914EDD200E006A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF861E642914EDD200E006A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF861E692914EDD200E006A6 /* 57-problems-coding-skillsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "57-problems-coding-skillsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF861E6D2914EDD200E006A6 /* _7_problems_coding_skillsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7_problems_coding_skillsTests.swift; sourceTree = "<group>"; };
 		EF861E732914EDD200E006A6 /* 57-problems-coding-skillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "57-problems-coding-skillsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF861E772914EDD200E006A6 /* _7_problems_coding_skillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7_problems_coding_skillsUITests.swift; sourceTree = "<group>"; };
-		EF861E792914EDD200E006A6 /* _7_problems_coding_skillsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7_problems_coding_skillsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF861E862914EE5A00E006A6 /* tipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipCalculator.swift; sourceTree = "<group>"; };
+		EF861E882914F49000E006A6 /* tipCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 			children = (
 				EF861E552914EDD100E006A6 /* 57-problems-coding-skills */,
 				EF861E6C2914EDD200E006A6 /* 57-problems-coding-skillsTests */,
-				EF861E762914EDD200E006A6 /* 57-problems-coding-skillsUITests */,
 				EF861E542914EDD100E006A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +103,7 @@
 				EF861E5F2914EDD200E006A6 /* Assets.xcassets */,
 				EF861E612914EDD200E006A6 /* LaunchScreen.storyboard */,
 				EF861E642914EDD200E006A6 /* Info.plist */,
+				EF861E862914EE5A00E006A6 /* tipCalculator.swift */,
 			);
 			path = "57-problems-coding-skills";
 			sourceTree = "<group>";
@@ -113,18 +111,9 @@
 		EF861E6C2914EDD200E006A6 /* 57-problems-coding-skillsTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF861E6D2914EDD200E006A6 /* _7_problems_coding_skillsTests.swift */,
+				EF861E882914F49000E006A6 /* tipCalculatorTests.swift */,
 			);
 			path = "57-problems-coding-skillsTests";
-			sourceTree = "<group>";
-		};
-		EF861E762914EDD200E006A6 /* 57-problems-coding-skillsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EF861E772914EDD200E006A6 /* _7_problems_coding_skillsUITests.swift */,
-				EF861E792914EDD200E006A6 /* _7_problems_coding_skillsUITestsLaunchTests.swift */,
-			);
-			path = "57-problems-coding-skillsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +187,7 @@
 					};
 					EF861E682914EDD200E006A6 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 						TestTargetID = EF861E522914EDD100E006A6;
 					};
 					EF861E722914EDD200E006A6 = {
@@ -261,6 +251,7 @@
 				EF861E5B2914EDD100E006A6 /* ViewController.swift in Sources */,
 				EF861E572914EDD100E006A6 /* AppDelegate.swift in Sources */,
 				EF861E592914EDD100E006A6 /* SceneDelegate.swift in Sources */,
+				EF861E872914EE5A00E006A6 /* tipCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF861E6E2914EDD200E006A6 /* _7_problems_coding_skillsTests.swift in Sources */,
+				EF861E892914F49000E006A6 /* tipCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF861E7A2914EDD200E006A6 /* _7_problems_coding_skillsUITestsLaunchTests.swift in Sources */,
-				EF861E782914EDD200E006A6 /* _7_problems_coding_skillsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,15 +480,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AJ7MW2XDAX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "justme.-7-problems-coding-skillsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/57-problems-coding-skills.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/57-problems-coding-skills";
@@ -511,11 +507,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AJ7MW2XDAX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "justme.-7-problems-coding-skillsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
