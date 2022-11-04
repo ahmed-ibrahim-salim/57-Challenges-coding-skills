@@ -28,7 +28,7 @@ final class Problem1Test: XCTestCase {
         do{
             try TipCalculator(billAmount: "a", tipRate: "b")
         }catch let error{
-            XCTAssertEqual(error as! InputError, InputError.wrongInput)
+            XCTAssertEqual(error as! SomeError, SomeError.wrongInput)
         }
     }
     func test_TipCalculator_WhenUseNegativeNum_throwsNegativeNumberError() throws {
@@ -36,7 +36,7 @@ final class Problem1Test: XCTestCase {
         do{
             try TipCalculator(billAmount: "-1", tipRate: "-2")
         }catch let error{
-            XCTAssertEqual(error as! InputError, InputError.negativeNumber)
+            XCTAssertEqual(error as! SomeError, SomeError.negativeNumber)
         }
     }
     

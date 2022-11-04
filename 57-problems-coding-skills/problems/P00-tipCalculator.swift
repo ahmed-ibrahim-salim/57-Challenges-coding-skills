@@ -17,12 +17,12 @@ class TipCalculator{
         
         guard let billAmount = Double(billAmount),
               let tipRate = Double(tipRate)else{
-            throw InputError.wrongInput
+            throw SomeError.wrongInput
         }
         
         guard billAmount >= 0,
               tipRate >= 0 else{
-                  throw InputError.negativeNumber
+                  throw SomeError.negativeNumber
         }
         
         self.billAmount = Double(billAmount)
@@ -43,8 +43,9 @@ class TipCalculator{
     
 }
 
-enum InputError: String, Error{
+enum SomeError: String, Error{
     case wrongInput = "Please enter a number"
     case negativeNumber = "Please enter a negative number"
+    case emptyInput = "please provide a name"
 }
 
