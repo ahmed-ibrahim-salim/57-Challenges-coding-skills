@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF28F61E2916F9B600BA62A0 /* Problem03.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61D2916F9B600BA62A0 /* Problem03.swift */; };
+		EF28F6202916FA0C00BA62A0 /* printQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */; };
 		EF861E572914EDD100E006A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E562914EDD100E006A6 /* AppDelegate.swift */; };
 		EF861E592914EDD100E006A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E582914EDD100E006A6 /* SceneDelegate.swift */; };
 		EF861E5B2914EDD100E006A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E5A2914EDD100E006A6 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF28F61D2916F9B600BA62A0 /* Problem03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem03.swift; sourceTree = "<group>"; };
+		EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printQuotesTests.swift; sourceTree = "<group>"; };
 		EF861E532914EDD100E006A6 /* 57-problems-coding-skills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "57-problems-coding-skills.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF861E562914EDD100E006A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF861E582914EDD100E006A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				EF861E882914F49000E006A6 /* tipCalculatorTests.swift */,
 				EF861E8F2915706D00E006A6 /* WelcomeUserTests.swift */,
 				EF8D42682915B11300549C5A /* NumOfCharTests.swift */,
+				EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */,
 			);
 			path = "57-problems-coding-skillsTests";
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				EF861E862914EE5A00E006A6 /* P00-tipCalculator.swift */,
 				EF861E8D29156F3000E006A6 /* P01-HelloWorld.swift */,
 				EF8D42662915B0DE00549C5A /* problem03-nomOfChar.swift */,
+				EF28F61D2916F9B600BA62A0 /* Problem03.swift */,
 			);
 			path = problems;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				EF861E592914EDD100E006A6 /* SceneDelegate.swift in Sources */,
 				EF861E8E29156F3000E006A6 /* P01-HelloWorld.swift in Sources */,
 				EF861E872914EE5A00E006A6 /* P00-tipCalculator.swift in Sources */,
+				EF28F61E2916F9B600BA62A0 /* Problem03.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +290,7 @@
 			files = (
 				EF861E892914F49000E006A6 /* tipCalculatorTests.swift in Sources */,
 				EF8D42692915B11300549C5A /* NumOfCharTests.swift in Sources */,
+				EF28F6202916FA0C00BA62A0 /* printQuotesTests.swift in Sources */,
 				EF861E902915706D00E006A6 /* WelcomeUserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

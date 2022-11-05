@@ -10,6 +10,7 @@ import Foundation
 @discardableResult
 func numOfChars(_ input: String) throws -> String{
     guard !input.isEmpty else{
+        print("please enter something")
         throw SomeError.emptyInput
     }
     

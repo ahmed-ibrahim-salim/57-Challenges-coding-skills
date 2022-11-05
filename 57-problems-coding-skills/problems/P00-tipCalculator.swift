@@ -44,8 +44,8 @@ class TipCalculator{
 }
 
 enum SomeError: String, Error{
-    case wrongInput = "Please enter a number"
-    case negativeNumber = "Please enter a negative number"
-    case emptyInput = "please provide a name"
+    case wrongInput
+    case negativeNumber
+    case emptyInput
 }
 
