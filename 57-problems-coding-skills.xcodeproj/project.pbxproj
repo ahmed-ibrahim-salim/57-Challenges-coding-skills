@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF28F61E2916F9B600BA62A0 /* Problem03.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61D2916F9B600BA62A0 /* Problem03.swift */; };
+		EF089BCD2917EC1D00369941 /* P05SimpleMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF089BCC2917EC1D00369941 /* P05SimpleMath.swift */; };
+		EF089BCF2917EC2C00369941 /* SimpleMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF089BCE2917EC2C00369941 /* SimpleMathTests.swift */; };
+		EF28F61E2916F9B600BA62A0 /* Problem03-PrintQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61D2916F9B600BA62A0 /* Problem03-PrintQuotes.swift */; };
 		EF28F6202916FA0C00BA62A0 /* printQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */; };
+		EF6FF9A42917CE4A0038C291 /* P04MadLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FF9A32917CE4A0038C291 /* P04MadLib.swift */; };
+		EF6FF9A62917CE5B0038C291 /* MadLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FF9A52917CE5B0038C291 /* MadLibTests.swift */; };
 		EF861E572914EDD100E006A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E562914EDD100E006A6 /* AppDelegate.swift */; };
 		EF861E592914EDD100E006A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E582914EDD100E006A6 /* SceneDelegate.swift */; };
 		EF861E5B2914EDD100E006A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E5A2914EDD100E006A6 /* ViewController.swift */; };
@@ -19,8 +23,10 @@
 		EF861E892914F49000E006A6 /* tipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E882914F49000E006A6 /* tipCalculatorTests.swift */; };
 		EF861E8E29156F3000E006A6 /* P01-HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E8D29156F3000E006A6 /* P01-HelloWorld.swift */; };
 		EF861E902915706D00E006A6 /* WelcomeUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E8F2915706D00E006A6 /* WelcomeUserTests.swift */; };
-		EF8D42672915B0DE00549C5A /* problem03-nomOfChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D42662915B0DE00549C5A /* problem03-nomOfChar.swift */; };
+		EF8D42672915B0DE00549C5A /* problem02-numOfChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D42662915B0DE00549C5A /* problem02-numOfChar.swift */; };
 		EF8D42692915B11300549C5A /* NumOfCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D42682915B11300549C5A /* NumOfCharTests.swift */; };
+		EFC6A0B329195BE7008345A8 /* P06RetirementCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC6A0B229195BE7008345A8 /* P06RetirementCalculator.swift */; };
+		EFC6A0B529195C08008345A8 /* RetirementCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC6A0B429195C08008345A8 /* RetirementCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EF28F61D2916F9B600BA62A0 /* Problem03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem03.swift; sourceTree = "<group>"; };
+		EF089BCC2917EC1D00369941 /* P05SimpleMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P05SimpleMath.swift; sourceTree = "<group>"; };
+		EF089BCE2917EC2C00369941 /* SimpleMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMathTests.swift; sourceTree = "<group>"; };
+		EF28F61D2916F9B600BA62A0 /* Problem03-PrintQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Problem03-PrintQuotes.swift"; sourceTree = "<group>"; };
 		EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printQuotesTests.swift; sourceTree = "<group>"; };
+		EF6FF9A32917CE4A0038C291 /* P04MadLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P04MadLib.swift; sourceTree = "<group>"; };
+		EF6FF9A52917CE5B0038C291 /* MadLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibTests.swift; sourceTree = "<group>"; };
 		EF861E532914EDD100E006A6 /* 57-problems-coding-skills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "57-problems-coding-skills.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF861E562914EDD100E006A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF861E582914EDD100E006A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +67,10 @@
 		EF861E882914F49000E006A6 /* tipCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipCalculatorTests.swift; sourceTree = "<group>"; };
 		EF861E8D29156F3000E006A6 /* P01-HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "P01-HelloWorld.swift"; sourceTree = "<group>"; };
 		EF861E8F2915706D00E006A6 /* WelcomeUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUserTests.swift; sourceTree = "<group>"; };
-		EF8D42662915B0DE00549C5A /* problem03-nomOfChar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "problem03-nomOfChar.swift"; sourceTree = "<group>"; };
+		EF8D42662915B0DE00549C5A /* problem02-numOfChar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "problem02-numOfChar.swift"; sourceTree = "<group>"; };
 		EF8D42682915B11300549C5A /* NumOfCharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfCharTests.swift; sourceTree = "<group>"; };
+		EFC6A0B229195BE7008345A8 /* P06RetirementCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P06RetirementCalculator.swift; sourceTree = "<group>"; };
+		EFC6A0B429195C08008345A8 /* RetirementCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetirementCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +139,9 @@
 				EF861E8F2915706D00E006A6 /* WelcomeUserTests.swift */,
 				EF8D42682915B11300549C5A /* NumOfCharTests.swift */,
 				EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */,
+				EF6FF9A52917CE5B0038C291 /* MadLibTests.swift */,
+				EF089BCE2917EC2C00369941 /* SimpleMathTests.swift */,
+				EFC6A0B429195C08008345A8 /* RetirementCalculatorTests.swift */,
 			);
 			path = "57-problems-coding-skillsTests";
 			sourceTree = "<group>";
@@ -136,8 +151,11 @@
 			children = (
 				EF861E862914EE5A00E006A6 /* P00-tipCalculator.swift */,
 				EF861E8D29156F3000E006A6 /* P01-HelloWorld.swift */,
-				EF8D42662915B0DE00549C5A /* problem03-nomOfChar.swift */,
-				EF28F61D2916F9B600BA62A0 /* Problem03.swift */,
+				EF8D42662915B0DE00549C5A /* problem02-numOfChar.swift */,
+				EF28F61D2916F9B600BA62A0 /* Problem03-PrintQuotes.swift */,
+				EF6FF9A32917CE4A0038C291 /* P04MadLib.swift */,
+				EF089BCC2917EC1D00369941 /* P05SimpleMath.swift */,
+				EFC6A0B229195BE7008345A8 /* P06RetirementCalculator.swift */,
 			);
 			path = problems;
 			sourceTree = "<group>";
@@ -275,12 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF861E5B2914EDD100E006A6 /* ViewController.swift in Sources */,
+				EFC6A0B329195BE7008345A8 /* P06RetirementCalculator.swift in Sources */,
 				EF861E572914EDD100E006A6 /* AppDelegate.swift in Sources */,
-				EF8D42672915B0DE00549C5A /* problem03-nomOfChar.swift in Sources */,
+				EF8D42672915B0DE00549C5A /* problem02-numOfChar.swift in Sources */,
 				EF861E592914EDD100E006A6 /* SceneDelegate.swift in Sources */,
 				EF861E8E29156F3000E006A6 /* P01-HelloWorld.swift in Sources */,
 				EF861E872914EE5A00E006A6 /* P00-tipCalculator.swift in Sources */,
-				EF28F61E2916F9B600BA62A0 /* Problem03.swift in Sources */,
+				EF089BCD2917EC1D00369941 /* P05SimpleMath.swift in Sources */,
+				EF28F61E2916F9B600BA62A0 /* Problem03-PrintQuotes.swift in Sources */,
+				EF6FF9A42917CE4A0038C291 /* P04MadLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +312,10 @@
 				EF861E892914F49000E006A6 /* tipCalculatorTests.swift in Sources */,
 				EF8D42692915B11300549C5A /* NumOfCharTests.swift in Sources */,
 				EF28F6202916FA0C00BA62A0 /* printQuotesTests.swift in Sources */,
+				EF089BCF2917EC2C00369941 /* SimpleMathTests.swift in Sources */,
+				EFC6A0B529195C08008345A8 /* RetirementCalculatorTests.swift in Sources */,
 				EF861E902915706D00E006A6 /* WelcomeUserTests.swift in Sources */,
+				EF6FF9A62917CE5B0038C291 /* MadLibTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

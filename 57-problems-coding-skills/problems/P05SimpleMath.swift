@@ -12,19 +12,20 @@ enum SimpleMathField: String, CaseIterable{
     case second
 }
 
-
-func simpleMath(){
+func simpleMath() {
     
     let cases = SimpleMathField.allCases
     
-    let nums = cases.map({
+    let nums: [Int] = cases.map({
         simpleMathField in
         
         print("What is the \(simpleMathField) number? ", terminator: "")
         let input = readLine()
         
-        guard let input = input, let inputAsInt = Int(input) else{
+        guard let input = input, let inputAsInt = Int(input), inputAsInt >= 0 else{
+            print("please enter numbers only ?")
             return 0
+            
 //            throw SomeError.wrongInput
         }
         return inputAsInt
@@ -40,7 +41,13 @@ func simpleMath(){
     }()
     
     let multiplication = nums.reduce(1){ $0 * $1 }
-    let dividing = nums.reduce(1){ $1 / $0 }
+    let dividing = {
+        var finalresult = nums[0]
+        for index in (1..<nums.count){
+            finalresult /= nums[index]
+        }
+        return finalresult
+    }()
 
     print(" \(addition)\n \(substract)\n \(multiplication)\n \(dividing)\n")
 }
