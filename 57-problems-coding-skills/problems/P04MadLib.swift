@@ -32,4 +32,4 @@ func readFromTerminal(){
     
 }
 
-readFromTerminal()
+//readFromTerminal()

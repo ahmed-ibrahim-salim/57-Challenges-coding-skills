@@ -52,4 +52,4 @@ func simpleMath() {
     print(" \(addition)\n \(substract)\n \(multiplication)\n \(dividing)\n")
 }
 
-simpleMath()
+//simpleMath()
