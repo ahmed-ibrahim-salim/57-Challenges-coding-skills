@@ -36,5 +36,18 @@ final class AreaOfRectangleTests: XCTestCase {
         
         XCTAssertNil(unit)
     }
+    func test_RoundNum_RoundsNumWithDecimalCountProvided(){
+        var num = 1.012
+        var rounded = num.roundNum(numOfFloatingPoints: 2)
+
+        XCTAssertEqual(rounded, 1.01)
+    }
+    func test_calculateAreaByUnit() throws{
+        let sut = TestClass()
+
+        let (areaInMeters, areaInFeet) =  sut.calculateAreaByUnit(choosenUnit: .meter, width: 1.0, length: 2.0)
+
+        XCTAssertEqual(areaInFeet, 21.52782)
+    }
     
 }

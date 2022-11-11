@@ -43,9 +43,4 @@ class TipCalculator{
     
 }
 
-enum SomeError: String, Error{
-    case wrongInput
-    case negativeNumber
-    case emptyInput
-}
 
