@@ -29,6 +29,8 @@
 		EF963B58291E5334006B5282 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF963B57291E5334006B5282 /* Helper.swift */; };
 		EF963B5A291E643E006B5282 /* P08PizzaParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF963B59291E643E006B5282 /* P08PizzaParty.swift */; };
 		EF963B5C291E6452006B5282 /* PizzaPartyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF963B5B291E6452006B5282 /* PizzaPartyTests.swift */; };
+		EFB58A56292292C200DEB846 /* P09PaintCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB58A55292292C200DEB846 /* P09PaintCalculator.swift */; };
+		EFB58A582922930600DEB846 /* PaintCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB58A572922930600DEB846 /* PaintCalculatorTests.swift */; };
 		EFC6A0B329195BE7008345A8 /* P06RetirementCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC6A0B229195BE7008345A8 /* P06RetirementCalculator.swift */; };
 		EFC6A0B529195C08008345A8 /* RetirementCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC6A0B429195C08008345A8 /* RetirementCalculatorTests.swift */; };
 		EFD5D0B9291AA53600D6FDAF /* P07AreaOfRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD5D0B8291AA53600D6FDAF /* P07AreaOfRectangle.swift */; };
@@ -79,6 +81,8 @@
 		EF963B57291E5334006B5282 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		EF963B59291E643E006B5282 /* P08PizzaParty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P08PizzaParty.swift; sourceTree = "<group>"; };
 		EF963B5B291E6452006B5282 /* PizzaPartyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaPartyTests.swift; sourceTree = "<group>"; };
+		EFB58A55292292C200DEB846 /* P09PaintCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P09PaintCalculator.swift; sourceTree = "<group>"; };
+		EFB58A572922930600DEB846 /* PaintCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintCalculatorTests.swift; sourceTree = "<group>"; };
 		EFC6A0B229195BE7008345A8 /* P06RetirementCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P06RetirementCalculator.swift; sourceTree = "<group>"; };
 		EFC6A0B429195C08008345A8 /* RetirementCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetirementCalculatorTests.swift; sourceTree = "<group>"; };
 		EFD5D0B8291AA53600D6FDAF /* P07AreaOfRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P07AreaOfRectangle.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				EFC6A0B429195C08008345A8 /* RetirementCalculatorTests.swift */,
 				EFD5D0BA291AA54E00D6FDAF /* AreaOfRectangleTests.swift */,
 				EF963B5B291E6452006B5282 /* PizzaPartyTests.swift */,
+				EFB58A572922930600DEB846 /* PaintCalculatorTests.swift */,
 			);
 			path = "57-problems-coding-skillsTests";
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				EFC6A0B229195BE7008345A8 /* P06RetirementCalculator.swift */,
 				EFD5D0B8291AA53600D6FDAF /* P07AreaOfRectangle.swift */,
 				EF963B59291E643E006B5282 /* P08PizzaParty.swift */,
+				EFB58A55292292C200DEB846 /* P09PaintCalculator.swift */,
 			);
 			path = problems;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 				EF861E572914EDD100E006A6 /* AppDelegate.swift in Sources */,
 				EF8D42672915B0DE00549C5A /* problem02-numOfChar.swift in Sources */,
 				EF963B56291E504A006B5282 /* DoubleExtensions.swift in Sources */,
+				EFB58A56292292C200DEB846 /* P09PaintCalculator.swift in Sources */,
 				EF861E592914EDD100E006A6 /* SceneDelegate.swift in Sources */,
 				EFD5D0B9291AA53600D6FDAF /* P07AreaOfRectangle.swift in Sources */,
 				EF861E8E29156F3000E006A6 /* P01-HelloWorld.swift in Sources */,
@@ -339,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB58A582922930600DEB846 /* PaintCalculatorTests.swift in Sources */,
 				EF963B5C291E6452006B5282 /* PizzaPartyTests.swift in Sources */,
 				EF861E892914F49000E006A6 /* tipCalculatorTests.swift in Sources */,
 				EF8D42692915B11300549C5A /* NumOfCharTests.swift in Sources */,
