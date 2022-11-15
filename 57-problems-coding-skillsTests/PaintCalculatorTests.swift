@@ -19,9 +19,17 @@ final class PaintCalculatorTests: XCTestCase {
     }
 
     func test_Gallons() throws{
-        let gallons = try paintCalculator(widthAsNum: 200, heightAsNum: 100)
-        
-        XCTAssertEqual(gallons, 58)
+//        let gallons = try paintCalculator(widthAsNum: 200, heightAsNum: 100)
+
+//        let gallons = try paintCalculator(radius: 20)
+
+//        let gallons = try paintCalculator(horizontalShort: 50,
+//                             horizontalLong: 100,
+//                             verticalShort: 50,
+//                             verticalLong: 100)
+//
+//        XCTAssertEqual(gallons, 29)
     }
     
 }
+
