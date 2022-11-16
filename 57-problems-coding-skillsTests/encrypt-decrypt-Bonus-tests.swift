@@ -37,16 +37,16 @@ final class encrypt_decrypt_Bonus_tests: XCTestCase {
     func test_findNum13(){
         let testing = TestingData()
         
-        let char = testing.findNum13(index: 12, shifting: 12)
+        let char = testing.findCharWithIndex(index: 12, cryptoString: "abcdefghijklmnopqrstuvwxyz", shifting: 12)
         XCTAssertEqual(char, "y")
         
-        let char4 = testing.findNum13(index: 12, shifting: 13)
+        let char4 = testing.findCharWithIndex(index: 12, cryptoString: "abcdefghijklmnopqrstuvwxyz", shifting: 13)
         XCTAssertEqual(char4, "z")
         
-        let char2 = testing.findNum13(index: 13, shifting: 13)
+        let char2 = testing.findCharWithIndex(index: 13, cryptoString: "abcdefghijklmnopqrstuvwxyz", shifting: 13)
         XCTAssertEqual(char2, "a")
         //
-        let char3 = testing.findNum13(index: 14, shifting: 14)
+        let char3 = testing.findCharWithIndex(index: 14, cryptoString: "abcdefghijklmnopqrstuvwxyz", shifting: 14)
         XCTAssertEqual(char3, "c")
 
     }
@@ -54,7 +54,7 @@ final class encrypt_decrypt_Bonus_tests: XCTestCase {
     func test_encrypt(){
         let testing = TestingData()
 
-        let encrypted = testing.encryptText(text: "av", cryptoString: "abcdefghijklmnopqrstuvwxyz", shifting: 12)
+        let encrypted = testing.encryptText(text: "av", cryptoString: "abcdefghijklmnopqrstuvwxyz", shifting: 40)
 
         XCTAssertEqual(encrypted, "mh")
 

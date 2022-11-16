@@ -35,43 +35,45 @@ struct TestingData{
         return alphaDict
     }
     
-    func findNum13(index: Int, shifting: Int)-> String?{
+    func findCharWithIndex(index: Int, cryptoString: String, shifting: Int)-> String?{
         // our alphabet as [0 : "a" ]
-        let alphabetWithIndex = produceCharWithIndices(alpha: "abcdefghijklmnopqrstuvwxyz")
+        let alphabetWithIndex = produceCharWithIndices(alpha: cryptoString)
         
         // lastindex --> if incomingIndex > lastindex --> incomingIndex - last
         let count = alphabetWithIndex.count
         
-        let properIndex = (index + shifting) >= count ? (index - count) : index
+        let remainder = shifting > count ? shifting % count : shifting
+        
+//        let newShift = remainder
+        
+        let properIndex = (index + remainder) >= count ? (index - count) : index
         
         return alphabetWithIndex[(properIndex + shifting)]
     }
     
     func encryptText(text: String, cryptoString: String, shifting: Int) -> String{
-        //        [Int?]
-        // get chars of input
-        let inputChars = text.map({
-            char in
-            return char
-        })
         
-        // standard alphabet as char & index [ "a" : 0 ]
+        // get chars of input
+        let inputChars = text.map({ $0 })
+        
+        // standard alphabet as (char & index) [ "a" : 0 ]
         let alphabetAsDict: [String : Int] = produceChars(alpha: cryptoString)
         
-        // each index found in alphabet
+        // each index found in alphabet dict
         let indicesFound = inputChars.map({
             alphabetAsDict[String($0)]
         }).filter({
             $0 != nil
         })
         
+        // list of chars
         let charsFound: [String?] = indicesFound.map({
             index in
             guard let newIndex = index else{ return nil}
-            return findNum13(index: newIndex, shifting: shifting)
+            return findCharWithIndex(index: newIndex, cryptoString: cryptoString ,shifting: shifting)
         }).filter({ $0 != nil})
         
-        
+        // result
         var chars = String()
         
         for char in charsFound{
@@ -80,7 +82,57 @@ struct TestingData{
             }
         }
         
-        return chars
+        return chars.count > 0 ? chars : "error"
     }
+    
+//
+//    func findCharWithIndexDecrypting(index: Int, cryptoString: String, shifting: Int)-> String?{
+//        // our alphabet as [0 : "a" ]
+//        let alphabetWithIndex = produceCharWithIndices(alpha: cryptoString)
+//
+//        // lastindex --> if incomingIndex > lastindex --> incomingIndex - last
+//        let count = alphabetWithIndex.count
+//
+//        let properIndex = (index + shifting) >= count ? (index - count) : index
+//
+//        return alphabetWithIndex[(properIndex + shifting)]
+//    }
+//
+//    func decryptText(text: String, cryptoString: String, shifting: Int) -> String{
+//
+//        // get chars of input
+//        let inputChars = text.map({ $0 })
+//
+//        // standard alphabet as (char & index) [ "a" : 0 ]
+//        let alphabetAsDict: [String : Int] = produceChars(alpha: cryptoString)
+//
+//        // each index found in alphabet dict
+//        let indicesFound = inputChars.map({
+//            alphabetAsDict[String($0)]
+//        }).filter({
+//            $0 != nil
+//        })
+//
+//        // list of chars
+//        let charsFound: [String?] = indicesFound.map({
+//            index in
+//            guard let newIndex = index else{ return nil}
+//
+//            return findCharWithIndexDecrypting(index: newIndex, cryptoString: cryptoString ,shifting: shifting)
+//
+//
+//        }).filter({ $0 != nil})
+//
+//        // result
+//        var chars = String()
+//
+//        for char in charsFound{
+//            if let char = char{
+//                chars += char
+//            }
+//        }
+//
+//        return chars
+//    }
 }
 
