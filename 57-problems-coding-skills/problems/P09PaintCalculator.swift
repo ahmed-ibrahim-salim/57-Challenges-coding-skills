@@ -114,7 +114,12 @@ struct LShaped: AreaCalculator{
          verticalShort: Double,
          verticalLong: Double){
         
-        // 4 sides
+//        --|
+//          |
+//          |-------|
+//                  |
+//
+        // 4 sides (inner)
         // (short - long) horizontal
         // (short - long) vertical
         
@@ -143,21 +148,11 @@ struct LShaped: AreaCalculator{
 
 @discardableResult
 func paintCalculator() throws -> Int{
-    
-    // horizontalShort: Double,
-    //horizontalLong: Double,
-    //verticalShort: Double,
-    //verticalLong: Double
-    
-    // radius: Double
-    
-    //widthAsNum: Double, heightAsNum: Double
-    
     let helper = Helper()
     var shape: AreaCalculator
     
     // inputs
-    print("Please enter 1 for rectangle or 2 for circle ", terminator: "")
+    print("Please enter 1 for rectangle, 2 for circle or 3 for LShaped: ", terminator: "")
     let choice = readLine()
     let choiceAsInt = try helper.checkInputAsInt(input: choice)
     
@@ -173,23 +168,21 @@ func paintCalculator() throws -> Int{
 
 func getShapeFromInput(shapeId: Int)throws -> AreaCalculator?{
     let helper = Helper()
-//
+    //
     if shapeId == 1{
-    let shapeLengthes: Array<[String : Double]> = try RectangleSides.allCases.map({
-        side in
-        print("please enter \(side.rawValue): ", terminator: "")
-        let sideLength = readLine()
-        let sideAsDouble = try helper.checkInputAsDouble(input: sideLength)
-        return [side.rawValue : sideAsDouble]
-    })
-    
-    let shapeLengthesValues = shapeLengthes.map({ $0.values.first! })
-    
-    
-    return Rectangle(width: shapeLengthesValues[0], height: shapeLengthesValues[1])
-    
-    }
-    else if shapeId == 2{
+        let shapeLengthes: Array<[String : Double]> = try RectangleSides.allCases.map({
+            side in
+            print("please enter \(side.rawValue): ", terminator: "")
+            let sideLength = readLine()
+            let sideAsDouble = try helper.checkInputAsDouble(input: sideLength)
+            return [side.rawValue : sideAsDouble]
+        })
+        
+        let shapeLengthesValues = shapeLengthes.map({ $0.values.first! })
+        
+        return Rectangle(width: shapeLengthesValues[0], height: shapeLengthesValues[1])
+        
+    }else if shapeId == 2{
         let shapeLengthes: Array<[String : Double]> = try CircleSides.allCases.map({
             side in
             print("please enter \(side.rawValue)! ", terminator: "")
@@ -197,17 +190,38 @@ func getShapeFromInput(shapeId: Int)throws -> AreaCalculator?{
             let sideAsDouble = try helper.checkInputAsDouble(input: sideLength)
             return [side.rawValue : sideAsDouble]
         })
-
+        
         let shapeLengthesValues = shapeLengthes.map({ $0.values.first! })
-
+        
         return Circle(radius: shapeLengthesValues[0])
+    }else if shapeId == 3{
+        let shapeLengthes: Array<[String : Double]> = try LShapedSides.allCases.map({
+            side in
+            print("please enter \(side.rawValue)! ", terminator: "")
+            let sideLength = readLine()
+            let sideAsDouble = try helper.checkInputAsDouble(input: sideLength)
+            return [side.rawValue : sideAsDouble]
+        })
+        
+        let shapeLengthesValues = shapeLengthes.map({ $0.values.first! })
+        
+        return LShaped(horizontalShort: shapeLengthesValues[0], horizontalLong: shapeLengthesValues[1], verticalShort: shapeLengthesValues[2], verticalLong: shapeLengthesValues[3])
     }
     else{
         print("please enter proper choice")
     }
-
+    
     throw SomeError.wrongInput
 }
+
+enum LShapedSides: String, CaseIterable{
+
+    case horizontalShort
+    case horizontalLong
+    case verticalShort
+    case verticalLong
+}
+
 
 enum RectangleSides: String, CaseIterable{
 
@@ -220,28 +234,8 @@ enum CircleSides: String, CaseIterable{
     case radius
 }
 
-struct ShapesDefiner{
-    var sides: [Any]
-    
-    init?(value: Int, rectangleSides: RectangleSides.AllCases) {
-        if value == 1{
-            self.sides = rectangleSides
-        }else{
-            return nil
-        }
-    }
-    
-    init?(value: Int, circleSides: CircleSides.AllCases) {
-        if value == 1{
-            self.sides = circleSides
-        }else{
-            return nil
-        }
-    }
-}
-
-do{
-    try paintCalculator()
-}catch{
-
-}
+//do{
+//    try paintCalculator()
+//}catch{
+//
+//}

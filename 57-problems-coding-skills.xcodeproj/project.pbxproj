@@ -11,6 +11,8 @@
 		EF089BCF2917EC2C00369941 /* SimpleMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF089BCE2917EC2C00369941 /* SimpleMathTests.swift */; };
 		EF28F61E2916F9B600BA62A0 /* Problem03-PrintQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61D2916F9B600BA62A0 /* Problem03-PrintQuotes.swift */; };
 		EF28F6202916FA0C00BA62A0 /* printQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */; };
+		EF492D902925053B003A1FE7 /* PR000-Bonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF492D8F2925053B003A1FE7 /* PR000-Bonus.swift */; };
+		EF492D922925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF492D912925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift */; };
 		EF6FF9A42917CE4A0038C291 /* P04MadLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FF9A32917CE4A0038C291 /* P04MadLib.swift */; };
 		EF6FF9A62917CE5B0038C291 /* MadLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FF9A52917CE5B0038C291 /* MadLibTests.swift */; };
 		EF861E572914EDD100E006A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF861E562914EDD100E006A6 /* AppDelegate.swift */; };
@@ -59,6 +61,8 @@
 		EF089BCE2917EC2C00369941 /* SimpleMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMathTests.swift; sourceTree = "<group>"; };
 		EF28F61D2916F9B600BA62A0 /* Problem03-PrintQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Problem03-PrintQuotes.swift"; sourceTree = "<group>"; };
 		EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printQuotesTests.swift; sourceTree = "<group>"; };
+		EF492D8F2925053B003A1FE7 /* PR000-Bonus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PR000-Bonus.swift"; sourceTree = "<group>"; };
+		EF492D912925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "encrypt-decrypt-Bonus-tests.swift"; sourceTree = "<group>"; };
 		EF6FF9A32917CE4A0038C291 /* P04MadLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P04MadLib.swift; sourceTree = "<group>"; };
 		EF6FF9A52917CE5B0038C291 /* MadLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibTests.swift; sourceTree = "<group>"; };
 		EF861E532914EDD100E006A6 /* 57-problems-coding-skills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "57-problems-coding-skills.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,7 @@
 				EFD5D0BA291AA54E00D6FDAF /* AreaOfRectangleTests.swift */,
 				EF963B5B291E6452006B5282 /* PizzaPartyTests.swift */,
 				EFB58A572922930600DEB846 /* PaintCalculatorTests.swift */,
+				EF492D912925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift */,
 			);
 			path = "57-problems-coding-skillsTests";
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				EFD5D0B8291AA53600D6FDAF /* P07AreaOfRectangle.swift */,
 				EF963B59291E643E006B5282 /* P08PizzaParty.swift */,
 				EFB58A55292292C200DEB846 /* P09PaintCalculator.swift */,
+				EF492D8F2925053B003A1FE7 /* PR000-Bonus.swift */,
 			);
 			path = problems;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 				EF963B58291E5334006B5282 /* Helper.swift in Sources */,
 				EF28F61E2916F9B600BA62A0 /* Problem03-PrintQuotes.swift in Sources */,
 				EF6FF9A42917CE4A0038C291 /* P04MadLib.swift in Sources */,
+				EF492D902925053B003A1FE7 /* PR000-Bonus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +357,7 @@
 				EF963B5C291E6452006B5282 /* PizzaPartyTests.swift in Sources */,
 				EF861E892914F49000E006A6 /* tipCalculatorTests.swift in Sources */,
 				EF8D42692915B11300549C5A /* NumOfCharTests.swift in Sources */,
+				EF492D922925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift in Sources */,
 				EF28F6202916FA0C00BA62A0 /* printQuotesTests.swift in Sources */,
 				EFD5D0BB291AA54E00D6FDAF /* AreaOfRectangleTests.swift in Sources */,
 				EF089BCF2917EC2C00369941 /* SimpleMathTests.swift in Sources */,
