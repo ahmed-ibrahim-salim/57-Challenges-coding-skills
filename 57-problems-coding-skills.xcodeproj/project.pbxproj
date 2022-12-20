@@ -11,6 +11,8 @@
 		EF089BCF2917EC2C00369941 /* SimpleMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF089BCE2917EC2C00369941 /* SimpleMathTests.swift */; };
 		EF28F61E2916F9B600BA62A0 /* Problem03-PrintQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61D2916F9B600BA62A0 /* Problem03-PrintQuotes.swift */; };
 		EF28F6202916FA0C00BA62A0 /* printQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */; };
+		EF386F982951CBDC0083CD51 /* P010Self_checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF386F972951CBDC0083CD51 /* P010Self_checkout.swift */; };
+		EF386F9A2951CBF00083CD51 /* SelfCheckoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF386F992951CBF00083CD51 /* SelfCheckoutTests.swift */; };
 		EF492D902925053B003A1FE7 /* PR000-Bonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF492D8F2925053B003A1FE7 /* PR000-Bonus.swift */; };
 		EF492D922925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF492D912925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift */; };
 		EF6FF9A42917CE4A0038C291 /* P04MadLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FF9A32917CE4A0038C291 /* P04MadLib.swift */; };
@@ -61,6 +63,8 @@
 		EF089BCE2917EC2C00369941 /* SimpleMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMathTests.swift; sourceTree = "<group>"; };
 		EF28F61D2916F9B600BA62A0 /* Problem03-PrintQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Problem03-PrintQuotes.swift"; sourceTree = "<group>"; };
 		EF28F61F2916FA0C00BA62A0 /* printQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printQuotesTests.swift; sourceTree = "<group>"; };
+		EF386F972951CBDC0083CD51 /* P010Self_checkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P010Self_checkout.swift; sourceTree = "<group>"; };
+		EF386F992951CBF00083CD51 /* SelfCheckoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfCheckoutTests.swift; sourceTree = "<group>"; };
 		EF492D8F2925053B003A1FE7 /* PR000-Bonus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PR000-Bonus.swift"; sourceTree = "<group>"; };
 		EF492D912925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "encrypt-decrypt-Bonus-tests.swift"; sourceTree = "<group>"; };
 		EF6FF9A32917CE4A0038C291 /* P04MadLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P04MadLib.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				EF963B5B291E6452006B5282 /* PizzaPartyTests.swift */,
 				EFB58A572922930600DEB846 /* PaintCalculatorTests.swift */,
 				EF492D912925055F003A1FE7 /* encrypt-decrypt-Bonus-tests.swift */,
+				EF386F992951CBF00083CD51 /* SelfCheckoutTests.swift */,
 			);
 			path = "57-problems-coding-skillsTests";
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				EF963B59291E643E006B5282 /* P08PizzaParty.swift */,
 				EFB58A55292292C200DEB846 /* P09PaintCalculator.swift */,
 				EF492D8F2925053B003A1FE7 /* PR000-Bonus.swift */,
+				EF386F972951CBDC0083CD51 /* P010Self_checkout.swift */,
 			);
 			path = problems;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 				EF963B56291E504A006B5282 /* DoubleExtensions.swift in Sources */,
 				EFB58A56292292C200DEB846 /* P09PaintCalculator.swift in Sources */,
 				EF861E592914EDD100E006A6 /* SceneDelegate.swift in Sources */,
+				EF386F982951CBDC0083CD51 /* P010Self_checkout.swift in Sources */,
 				EFD5D0B9291AA53600D6FDAF /* P07AreaOfRectangle.swift in Sources */,
 				EF861E8E29156F3000E006A6 /* P01-HelloWorld.swift in Sources */,
 				EF963B5A291E643E006B5282 /* P08PizzaParty.swift in Sources */,
@@ -354,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB58A582922930600DEB846 /* PaintCalculatorTests.swift in Sources */,
+				EF386F9A2951CBF00083CD51 /* SelfCheckoutTests.swift in Sources */,
 				EF963B5C291E6452006B5282 /* PizzaPartyTests.swift in Sources */,
 				EF861E892914F49000E006A6 /* tipCalculatorTests.swift in Sources */,
 				EF8D42692915B11300549C5A /* NumOfCharTests.swift in Sources */,
